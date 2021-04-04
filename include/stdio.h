@@ -129,8 +129,8 @@ typedef struct __sFILE FILE;
 # define _EXFUN(N,P) N P
 #endif
 
-int     _EXFUN(printf, (const char *, ...));
-int     _EXFUN(scanf, (const char *, ...));
+int     _EXFUN(print, (const char *, ...));
+int     _EXFUN(scan, (const char *, ...));
 int     _EXFUN(sscanf, (const char *, const char *, ...));
 int     _EXFUN(vfprintf, (FILE *, const char *, __VALIST));
 int     _EXFUN(vprintf, (const char *, __VALIST));
@@ -142,7 +142,7 @@ int     _EXFUN(fputc, (int, FILE *));
 int     _EXFUN(fputs, (const char *, FILE *));
 int     _EXFUN(getc, (FILE *));
 int     _EXFUN(getchar, (void));
-char *  _EXFUN(gets, (char *));
+char *  _EXFUN(get, (char *));
 int     _EXFUN(putc, (int, FILE *));
 int     _EXFUN(putchar, (int));
 int     _EXFUN(puts, (const char *));
