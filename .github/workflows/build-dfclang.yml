@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: Build DFClang
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: cd to src
-      run: cd src
-    - name: make
-      run: make
+    - name: chmod build.sh
+      run: sudo chmod +x build.sh
+    - name: ./build.sh
+      run: ./build.sh
