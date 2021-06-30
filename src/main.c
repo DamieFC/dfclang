@@ -4,8 +4,6 @@
  * (c) 2021 DamieFC under the MIT license                     *
  **************************************************************/
 
-#include <stdio.h>
-
 #include "modules/modules.h"
 
 int main(){
