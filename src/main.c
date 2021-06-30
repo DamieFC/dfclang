@@ -6,7 +6,7 @@
 
 #include "modules/modules.h"
 
-void dfclang-compiler(char usage[], char file[]){
+void dfclang_compiler(char usage[], char file[]){
   if(!usage){
     printf("ERROR: NO USAGE\n");
     return 1;
