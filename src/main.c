@@ -17,9 +17,9 @@ void dfclang_compiler(char usage[], char file[]) {
            help\n\
            run\n\
            "); // lets see if this works :\
-  /************************************************************
-   * THE COMPILER ITSELF!!!! Sorry nothing really yet :(      *
-   ************************************************************/
+  //************************************************************
+  //* THE COMPILER ITSELF!!!! Sorry nothing really yet :(      *
+  //************************************************************
   } else{
     if(strcmp(usage[1], "run") == 0) {
       
