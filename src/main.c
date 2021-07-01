@@ -7,23 +7,21 @@
 #include "modules/modules.h"
 
 void dfclang_compiler(char usage[], char file[]) {
-  if(!usage) {
+  if(!usage[]) {
     printf("Error: no options or anything at all\n");
     return 1;
-  }
-  else if(strcmp(usage, "help") == 0) {
+  } else if(strcmp(usage[1], "help") == 0) {
     printf("The dfclang compiler is used using ./dfclang run <filename>.\n"); // Need to work on
     printf("All options: \n");
     printf("\
            help\n\
            run\n\
            "); // lets see if this works :\
-  }
   /************************************************************
    * THE COMPILER ITSELF!!!! Sorry nothing really yet :(      *
    ************************************************************/
-  else{
-    if(strcmp(usage[], "run") == 0) {
+  } else{
+    if(strcmp(usage[1], "run") == 0) {
       
     }
   }
