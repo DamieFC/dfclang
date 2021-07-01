@@ -7,7 +7,7 @@
 #include "modules/modules.h"
 
 void dfclang_compiler(char usage[], char file[]) {
-  if(!usage[]) {
+  if(usage[1] == "\0") {
     printf("Error: no options or anything at all\n");
     return 1;
   } else if(strcmp(usage[1], "help") == 0) {
