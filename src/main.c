@@ -4,7 +4,8 @@
  * (c) 2021 DamieFC under the MIT license                     *
  **************************************************************/
 
-#include "modules/modules.h"
+#include <stdio.h>
+#include <string.h>
 
 void dfclang_compiler(char usage[], char file[]) {
   if(usage[1] == "\0") {
@@ -22,7 +23,10 @@ void dfclang_compiler(char usage[], char file[]) {
   //************************************************************
   } else{
     if(strcmp(usage[1], "run") == 0) {
-      
+      code = fopen(file[1], "r");
+      while(code != "EOF"){
+        ;
+      }
     }
   }
 }
