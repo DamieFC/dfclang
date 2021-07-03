@@ -25,7 +25,11 @@ void dfclang_compiler(char usage[], char file[]) {
     if(strcmp(usage[1], "run") == 0) {
       code = fopen(file[1], "r");
       while(code != "EOF"){
-        ;
+        if(code == "//") {
+          while(code != "\n") {
+            code = code++
+          }
+        }
       }
     }
   }
