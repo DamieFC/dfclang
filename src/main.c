@@ -8,7 +8,7 @@
 #include <string.h>
 
 void dfclang_compiler(char usage[], char file[]) {
-  if(usage[1] == "\0") {
+  if(usage[0] == "") {
     printf("Error: no options or anything at all\n");
     return 1;
   } else if(strcmp(usage[1], "help") == 0) {
@@ -22,12 +22,17 @@ void dfclang_compiler(char usage[], char file[]) {
   //* THE COMPILER ITSELF!!!! Sorry nothing really yet :(      *
   //************************************************************
   } else{
-    if(strcmp(usage[1], "run") == 0) {
-      code = fopen(file[1], "r");
+    if(strcmp(usage[0], "run") == 0) {
+      code = fopen(file[0], "r");
       while(code != "EOF"){
         if(code == "//") {
           while(code != "\n") {
-            code = code++
+            code = code++;
+          }
+        }
+        if(code == "/*") {
+          while(code != "*/") {
+            code == code++;
           }
         }
       }
