@@ -23,8 +23,8 @@ void dfclang_compiler(char usage[], char file[]) {
   //************************************************************
   } else{
     if(strcmp(usage[0], "run") == 0) {
-      file = fopen(file[0], "r");
-      code = fread(file);
+      char* file = fopen(file[0], "r");
+      char* code = fread(file);
       while(code != "EOF"){
         if(code == "//") {
           while(code != "\n") {
